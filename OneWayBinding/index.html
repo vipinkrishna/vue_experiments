@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <title>VUE ONE WAY BINDING (FROM DATASOURCE TO VIEW)</title>
+    <script src="lib/vue.min.js"></script>
+</head>
+
+<body>
+    <div id="parent">
+        <!-- {{helloworld()}} -->
+        <!-- {{callMethod()}} -->
+        <!-- {{callOtherMethod()}} -->
+        <input type="text" v-bind:value="message">
+        <input type="text" v-bind:value=message>
+        <input type="text" v-bind:value=helloworld()>
+        <input type="text" v-bind:value="'string'">
+        <input type="text" v-bind:value="123">
+        <input type="text" v-bind:value=789>
+    </div>
+    <script src="vue/script.js"></script>
+</body>
+
+</html>
