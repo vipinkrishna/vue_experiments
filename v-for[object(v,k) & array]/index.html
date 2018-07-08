@@ -1,0 +1,28 @@
+<html>
+
+<head>
+    <title>v-for OBJECT(value, key) ARRAY(for in, for of)</title>
+    <script src="lib/vue.min.js"></script>
+</head>
+
+<body>
+    <div id="parent">
+        <input type="text" v-model="text">
+        <hr>
+        <p>V-FOR IN OBJECT
+            <ul>
+                <li v-for="value,key in getobject">{{value.word}} - {{value.count}}</li>
+            </ul>
+        </p>
+        <hr>
+        <p>V-FOR OF ARRAY
+            <ul>
+                <li v-for="value,index of getarray()">{{index}} {{value}}</li>
+            </ul>
+        </p>
+        <hr>
+    </div>
+    <script src="vue/script.js"></script>
+</body>
+
+</html>
