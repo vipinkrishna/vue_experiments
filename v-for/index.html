@@ -1,0 +1,25 @@
+<html>
+
+<head>
+    <title>v-for (for in, for of)</title>
+    <script src="lib/vue.min.js"></script>
+</head>
+
+<body>
+    <div id="parent">
+        <input type="text" v-model="text">
+        <p>V-FOR IN
+            <ul>
+                <li v-for="item,index in getwords">{{index}} {{item}}</li>
+            </ul>
+        </p>
+        <p>V-FOR OF
+            <ul>
+                <li v-for="item,index of getitems()">{{index}} {{item}}</li>
+            </ul>
+        </p>
+    </div>
+    <script src="vue/script.js"></script>
+</body>
+
+</html>
