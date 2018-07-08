@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>TWO WAY DATA BINDING V-MODEL</title>
+    <title>COMPUTED DEPENDENCY</title>
     <script src="lib/vue.min.js"></script>
 </head>
 
@@ -9,8 +9,14 @@
     <div id="parent">
         <input type="text" v-model="name">
         <input type="text" v-model="anothername">
+        <input type="text" v-model="yetanothername">
         {{computed_prop}}
         {{methods_prop()}}
+        {{methods_starprop()}}
+        <br>
+        {{name}}
+        {{anothername}}
+        {{yetanothername}}
     </div>
     <script src="vue/script.js"></script>
 </body>
