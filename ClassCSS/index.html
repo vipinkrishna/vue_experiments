@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>Class CSS</title>
+    <script src="lib/vue.min.js"></script>
+</head>
+<style>
+    #parent div {
+        height: 100px;
+        width: 100px;
+        background: black;
+        margin: 20px;
+    }
+
+    #parent div.red {
+        background: red;
+    }
+
+    #parent div.blue {
+        background: blue;
+    }
+
+</style>
+
+<body>
+    <div id="parent">
+        <div :class="['class1','class2']"></div>
+        <div :class="{red:false}"></div>
+        <div :class="{red:true}"></div>
+        <div :class="{'class-name':true}"></div>
+        <div :class="[{red:true},{blue:true},'orange']"></div>
+        <div class="static_class"></div>
+        
+        <div :class="classObject"></div>
+        <button @click="toggle">Toggle Color</button>
+    </div>
+    <script src="vue/script.js"></script>
+</body>
+
+</html>
